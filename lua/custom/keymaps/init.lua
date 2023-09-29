@@ -38,4 +38,4 @@ keymap.set("n", "<leader>tp", ":tabp<CR>")
 keymap.set("n", "<leader>max", ":MaximizerToggle<CR>")
 
 -- nvim-tree
-keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>")
+keymap.set("n", "<leader>tt", ":Neotree toggle<CR>")
