@@ -437,7 +437,44 @@ require('mason-lspconfig').setup()
 local servers = {
   -- clangd = {},
   -- gopls = {},
-  -- pyright = {},
+  pyright = {},
+  marksman = {},
+  yamlls = {
+    settings = {
+      yaml = {
+        keyOrdering = false,
+      },
+    },
+  },
+  ansiblels = {
+    filetypes = {
+      "yaml.ansible",
+    },
+    settings = {
+      ansible = {
+        ansible = {
+          path = "ansible",
+          useFullyQualifiedCollectionNames = true,
+        },
+        ansibleLint = {
+          enabled = true,
+          path = "ansible-lint",
+        },
+        executionEnvironment = {
+          enabled = false,
+        },
+        python = {
+          interpreterPath = "python",
+        },
+        completion = {
+          provideRedirectModules = true,
+          provideModuleOptionAliases = true,
+        },
+      },
+    },
+  },
+  terraformls = {},
+  dockerls = {},
   -- rust_analyzer = {},
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
