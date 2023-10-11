@@ -39,3 +39,8 @@ keymap.set("n", "<leader>max", ":MaximizerToggle<CR>")
 
 -- nvim-tree
 keymap.set("n", "<leader>tt", ":Neotree toggle<CR>")
+
+-- Notes
+keymap.set("n", "<leader>nc", ":cd ~/Notes/Cisco | e PLANNING.md\n")
+keymap.set("n", "<leader>nt", ":cd ~/Notes/Tech | e README.md\n")
+keymap.set("n", "<leader>np", ":cd ~/Notes/Personal | e PLANNING.md\n")
